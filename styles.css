@@ -1,0 +1,148 @@
+@font-face {
+    font-family: myFirstFont;
+    src: url(sansation_light.woff);
+}
+
+.color_1 {
+  background-color: #1E1A29;
+}
+.color_2 {
+  background-color: #121019;
+}
+
+body {
+  background-image:url("background_dangiels.png");
+  background-repeat:repeat;
+  
+  margin:0px;
+}
+div.page {
+  background-color:rgba(0,0,0,0.80);
+  
+  font-size:18px;
+  font-family:Arial, Helvetica, sans-serif;
+  color:white;
+  
+  width:800px;
+  min-height:85vh;
+  margin-left:auto;
+  margin-right:auto;
+  position:relative;
+  
+  
+  padding-left:20px;
+  padding-right:20px;
+  padding-top:20px;
+  padding-bottom:20px;
+}
+
+
+div.page_header {
+  text-align:left;
+  
+  font-size:54px;
+  font-family: 'Montserrat', sans-serif;
+  color:white;
+}
+
+div.navigation_box {
+  display: flex;
+  flex-wrap: wrap;
+}
+a.navigation_button {
+  background-color:#1E1A29;
+  
+  font-size:18px;
+  font-family:Arial, Helvetica, sans-serif;
+  color:white;
+  text-align:center;
+  text-decoration: none;
+  
+  flex-grow: 10;
+  margin:1px;
+  padding:4px;
+  
+  -webkit-transition: all 0.2s ease-out;
+          transition: all 0.2s ease-out;
+}
+a.navigation_button:hover {
+  background-color:#291e1a;
+  
+  -webkit-transform: scale(0.90) perspective(400px) rotateY(0deg) rotateX(0deg);
+  -moz-transform: scale(0.90) perspective(400px) rotateY(0deg) rotateX(0deg);
+  -ms-transform: scale(0.90) perspective(400px) rotateY(0deg) rotateX(0deg);
+  transform: scale(0.90) perspective(400px) rotateY(0deg) rotateX(0deg);
+}
+div.display_box {
+  display: flex;
+}
+
+a.display_item {
+  background-color:#1E1A29;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 300%;
+  min-width: 200px;
+  
+  image-rendering: optimizeSpeed;             /* FUCK SMOOTHING, GIVE ME SPEED  */
+  image-rendering: -moz-crisp-edges;          /* Firefox                        */
+  image-rendering: -o-crisp-edges;            /* Opera                          */
+  image-rendering: -webkit-optimize-contrast; /* Chrome (and eventually Safari) */
+  image-rendering: optimize-contrast;         /* CSS3 Proposed                  */
+  -ms-interpolation-mode: nearest-neighbor;   /* IE8+                           */
+  
+  float: left;
+  flex-grow: 10;
+  margin:1px;
+  height: 300px;
+  position: relative;
+  
+  text-decoration: none; 
+  
+  -webkit-transition: all 0.5s ease-out;
+          transition: all 0.5s ease-out;
+          
+}
+
+a.display_item:hover {
+  background-size: 270%;
+  -webkit-transform: scale(0.96) perspective(400px) rotateY(0deg) rotateX(0deg);
+  -moz-transform: scale(0.96) perspective(400px) rotateY(0deg) rotateX(0deg);
+  -ms-transform: scale(0.96) perspective(400px) rotateY(0deg) rotateX(0deg);
+  transform: scale(0.96) perspective(400px) rotateY(0deg) rotateX(0deg);
+}
+
+a.display_item div{
+  padding:4px;
+  padding-left:8px;
+  margin:0px;
+  position:absolute;
+  bottom: 0px;
+  
+  background: rgba(0, 0, 0, 0.6);
+  box-sizing: border-box;
+  width: 100%;
+  
+  font-size:18px;
+  font-family:Arial, Helvetica, sans-serif;
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.5);
+  color:white;
+}
+
+a.display_item p{
+  margin:0px;
+  font-size:16px;
+}
+
+div.footer {
+  position:relative;
+  bottom:0;
+  
+  box-sizing: block;
+  min-height:0vh;
+  
+  text-align:center;
+  font-size:12px;
+  font-family:Arial, Helvetica, sans-serif;
+  color:white;
+}

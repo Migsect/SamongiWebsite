@@ -1,0 +1,151 @@
+div.staff_column_section {
+  display:block;
+  width:auto;
+}
+div.staff_header {
+  font-size: 40px;
+  margin-bottom: 8px;
+  padding:8px;
+}
+div.staff_page {
+  display: flex;
+  flex-wrap: nowrap;
+  margin-bottom:8px;
+}
+
+div.staff_page.hidden {
+  display: none;
+}
+div.staff_page.shown {
+  display: flex;
+}
+div.staff_left {
+  
+  flex-grow: 10;
+  min-width: 10%;
+}
+div.staff_right {
+  flex-grow: 5;
+  min-width: 35%;
+  
+  margin-left: 8px;
+}
+div.staff_picture {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  flex-grow: 10;
+  
+  height: 300px;
+  margin:8px;
+}
+div.staff_info {
+  display: block;
+  
+  padding-top:8px;
+  padding-bottom:16px;
+  flex-grow: 10;
+  
+  font-size: 16px;
+  
+  padding:8px;
+}
+div.staff_info a {
+  text-decoration: none;
+}
+div.staff_subheader_1 {
+  font-size: 32px;
+  margin-bottom: 8px;
+  padding:8px;
+}
+div.staff_subheader_1 span {
+  float:right;
+  font-size: 28px;
+}
+div.staff_subheader_2 {
+  font-size: 28px;
+  margin-bottom: 8px;
+}
+div.staff_subheader_2 span {
+  float:right;
+  font-size: 24px;
+}
+div.staff_subheader_3 {
+  font-size: 20px;
+  margin-bottom: 8px;
+}
+div.staff_subheader_3 span {
+  float:right;
+  font-size: 16px;
+}
+div.staff_text {
+  padding:8px;
+  margin-bottom:8px;
+}
+div.staff_about {
+  text-indent: 60px;
+  font-size: 16px;
+  margin-bottom: 16px;
+}
+div.staff_tab_box {
+  display: flex;
+  flex-wrap: wrap;
+}
+div.staff_tab_button.selected {
+  background-color:#291e1a;
+}
+div.staff_tab_button {
+  background-color:#1E1A29;
+  
+  font-size:18px;
+  font-family:Arial, Helvetica, sans-serif;
+  color:white;
+  text-align:center;
+  text-decoration: none;
+  
+  flex-grow: 10;
+  margin-right:2px;
+  margin-bottom:8px;
+  padding:4px;
+  
+  -webkit-transition: all 0.2s ease-out;
+          transition: all 0.2s ease-out;
+  
+  cursor: pointer; 
+}
+ div.staff_tab_button:hover {
+  background-color:#291e1a;
+  
+  -webkit-transform: scale(0.90) perspective(400px) rotateY(0deg) rotateX(0deg);
+  -moz-transform: scale(0.90) perspective(400px) rotateY(0deg) rotateX(0deg);
+  -ms-transform: scale(0.90) perspective(400px) rotateY(0deg) rotateX(0deg);
+  transform: scale(0.90) perspective(400px) rotateY(0deg) rotateX(0deg);
+}
+
+div.staff_title {
+  background-color:#1E1A29;
+  display: block-inline;
+  margin-right: 10px;
+  
+  padding: 10px;
+  
+}
+div.bust_picture {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  flex-grow: 10;
+  
+  border-style: solid;
+  border-width: 5px;
+  border-color: #1E1A29;
+  
+  margin-left: 10px;
+  
+  min-width: 240px;
+  
+}
+
+div.picture_display {
+  display: flex;
+}
